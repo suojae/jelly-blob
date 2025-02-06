@@ -75,6 +75,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  jelly_blob:
+    dependency: "direct main"
+    description:
+      path: "../packages/jelly_blob"
+      relative: true
+    source: path
+    version: "0.0.1"
   leak_tracker:
     dependency: transitive
     description:
