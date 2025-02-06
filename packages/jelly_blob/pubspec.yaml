@@ -1,7 +1,7 @@
 name: jelly_blob
-description: "A new Flutter package project."
+description: "package jelly blob."
 version: 0.0.1
-homepage:
+homepage: ""
 
 environment:
   sdk: ^3.6.0
@@ -10,7 +10,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  melos: ^6.3.2
 
 dev_dependencies:
   flutter_test:
