@@ -1,0 +1,4 @@
+name: blob_monorepo
+packages:
+  - packages/**
+  - example/**
