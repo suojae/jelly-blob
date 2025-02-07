@@ -65,4 +65,3 @@ class _AnimatedBlobState extends State<AnimatedBlob>
     );
   }
 }
-
