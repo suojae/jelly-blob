@@ -1,33 +1,41 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
+
 import 'blob_painter.dart';
 
-
-final class AnimatedBlob extends StatefulWidget {
+class AnimatedBlob extends StatefulWidget {
   final Color startColor;
   final Color endColor;
   final Alignment gradientDirection;
+  final Duration duration;
+  final double width;
+  final double height;
 
   const AnimatedBlob({
     super.key,
     required this.startColor,
     required this.endColor,
-    required this.gradientDirection,
+    this.gradientDirection = Alignment.topLeft,
+    required this.duration,
+    this.width = 300,
+    this.height = 300,
   });
 
   @override
   State<AnimatedBlob> createState() => _AnimatedBlobState();
 }
 
-class _AnimatedBlobState extends State<AnimatedBlob> with SingleTickerProviderStateMixin {
+class _AnimatedBlobState extends State<AnimatedBlob>
+    with SingleTickerProviderStateMixin {
   late AnimationController _controller;
+  final int _pointCount = 15;
+  final double _amplitude = 5.0;
+  final double _baseRadiusFactor = 0.35;
 
   @override
   void initState() {
     super.initState();
     _controller = AnimationController(
-      duration: const Duration(seconds: 2),
+      duration: widget.duration,
       vsync: this,
     )..repeat();
   }
@@ -48,8 +56,11 @@ class _AnimatedBlobState extends State<AnimatedBlob> with SingleTickerProviderSt
           startColor: widget.startColor,
           endColor: widget.endColor,
           gradientDirection: widget.gradientDirection,
+          pointCount: _pointCount,
+          amplitude: _amplitude,
+          baseRadiusFactor: _baseRadiusFactor,
         ),
-        size: const Size(300, 300),
+        size: Size(widget.width, widget.height),
       ),
     );
   }
