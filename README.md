@@ -22,9 +22,7 @@ Jelly Blob is a dynamic, customizable Flutter library that allows you to seamles
 - **Dynamic Blob Animations:** Enjoy smooth, continuously evolving blob shapes.
 - **Polymorphic Design:** Easily wrap any widget with blob effects—be it a color, gradient, image, or custom layout.
 - **Highly Customizable:** Configure animation duration, blob size, **detail level (smoothness), amplitude (wave effect)**, and more.
-- **Modular Architecture:** Built using a Melos monorepo setup for better maintainability and scalability.
 - **Developer Friendly:** Comprehensive documentation, detailed API examples, and unit tests ensure a hassle-free integration.
-- **Industry-Grade Quality:** Designed following best practices and real-world requirements from Silicon Valley.
 
 <br/>
 

@@ -1,3 +1,6 @@
+## 1.0.2
+* fix readme file
+
 ## 1.0.1
 
 * **Enhanced Customization & API Improvements**
