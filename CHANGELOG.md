@@ -1,3 +1,13 @@
+## 1.0.1
+
+* **Enhanced Customization & API Improvements**
+  * Renamed `pointCount` → `detailLevel` for better readability and clarity.
+  * Exposed `detailLevel` and `amplitude` as fully customizable parameters.
+  * Improved default values for better UX:
+    * `detailLevel = 12` (balanced blob complexity)
+    * `amplitude = 10.0` (natural distortion effect)
+  * Maintains full support for images, gradients, and custom widgets inside the blob.
+
 ## 1.0.0
 
 * **Initial Stable Release**
