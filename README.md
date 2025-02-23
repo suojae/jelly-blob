@@ -1,20 +1,33 @@
 
-
-
 # Jelly Blob
 
-<image src="https://github.com/user-attachments/assets/762d4026-fb11-4219-86fa-81cb39553ee8" width="700">
+<image src="https://github.com/user-attachments/assets/762d4026-fb11-4219-86fa-81cb39553ee8" width="400">
+
+<br/>
+
+<br/>
 
 Jelly Blob is a dynamic, customizable Flutter library that allows you to seamlessly integrate animated blob effects into your applications. With its polymorphic design, you can apply stunning blob animations not only to color backgrounds but also to images, gradients, or any custom widget.
 
+<br/>
+
 ## Features
+
+<img src="https://github.com/user-attachments/assets/829d3295-670a-4cd7-85d0-996f60dc420e" width="200">
+
+<br/>
+<br/>
+
 
 - **Dynamic Blob Animations:** Enjoy smooth, continuously evolving blob shapes.
 - **Polymorphic Design:** Easily wrap any widget with blob effects—be it a color, gradient, image, or custom layout.
-- **Highly Customizable:** Configure animation duration, blob size, amplitude, point count, and more.
+- **Highly Customizable:** Configure animation duration, blob size, **detail level (smoothness), amplitude (wave effect)**, and more.
 - **Modular Architecture:** Built using a Melos monorepo setup for better maintainability and scalability.
 - **Developer Friendly:** Comprehensive documentation, detailed API examples, and unit tests ensure a hassle-free integration.
 - **Industry-Grade Quality:** Designed following best practices and real-world requirements from Silicon Valley.
+
+<br/>
+
 
 ## Installation
 
@@ -22,7 +35,7 @@ Add Jelly Blob to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  jelly_blob: ^1.0.0
+  jelly_blob: ^1.0.1
 ```
 
 Then run:
@@ -30,6 +43,8 @@ Then run:
 ```bash
 flutter pub get
 ```
+
+<br/>
 
 ## Usage
 
@@ -68,6 +83,8 @@ class ExampleBlobContainer extends StatelessWidget {
       duration: Duration(seconds: 4),
       width: 300,
       height: 300,
+      detailLevel: 15, // More control points for smoother blob shape
+      amplitude: 12.0, // Higher amplitude for a more dynamic effect
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [Colors.blue, Colors.purple],
@@ -90,9 +107,7 @@ class ExampleBlobContainer extends StatelessWidget {
 }
 ```
 
-## Documentation
-
-For detailed API references and advanced usage, please check our [Documentation](https://your-docs-link.com).
+<br/>
 
 ## Contributing
 
