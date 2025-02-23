@@ -1,7 +1,6 @@
 name: jelly_blob
-description: "A dynamic, animated blob effect package for Flutter widgets. [GitHub Repository](https://github.com/suojae/jelly-blob)"
-version: 1.0.3
-homepage: https://github.com/suojae/jelly-blob
+description: "A dynamic, animated blob effect package for Flutter widgets."
+version: 1.0.5
 repository: https://github.com/suojae/jelly-blob/tree/main/packages/jelly_blob
 issue_tracker: https://github.com/suojae/jelly-blob/issues
 
