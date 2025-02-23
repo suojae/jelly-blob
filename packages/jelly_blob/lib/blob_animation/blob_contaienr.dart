@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'blob_cliper.dart';
 
 class BlobContainer extends StatefulWidget {
-  final Widget child;
+  final Widget? child;
   final Duration duration;
   final double width;
   final double height;
@@ -13,7 +13,7 @@ class BlobContainer extends StatefulWidget {
 
   const BlobContainer({
     super.key,
-    required this.child,
+    this.child,
     required this.duration,
     this.width = 300,
     this.height = 300,
