@@ -6,7 +6,7 @@ class BlobContainer extends StatefulWidget {
   final Duration duration;
   final double width;
   final double height;
-  final int pointCount;
+  final int detailLevel;
   final double amplitude;
   final double baseRadiusFactor;
   final Decoration? decoration;
@@ -17,8 +17,8 @@ class BlobContainer extends StatefulWidget {
     required this.duration,
     this.width = 300,
     this.height = 300,
-    this.pointCount = 12,
-    this.amplitude = 5.0,
+    this.detailLevel = 12,
+    this.amplitude = 10.0,
     this.baseRadiusFactor = 0.35,
     this.decoration,
   });
@@ -54,7 +54,7 @@ class _BlobContainerState extends State<BlobContainer>
         return ClipPath(
           clipper: BlobClipper(
             animationValue: _controller.value,
-            pointCount: widget.pointCount,
+            pointCount: widget.detailLevel,
             amplitude: widget.amplitude,
             baseRadiusFactor: widget.baseRadiusFactor,
           ),
