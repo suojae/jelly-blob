@@ -35,7 +35,8 @@ class BlobButton extends StatefulWidget {
   _BlobButtonState createState() => _BlobButtonState();
 }
 
-class _BlobButtonState extends State<BlobButton> with SingleTickerProviderStateMixin {
+class _BlobButtonState extends State<BlobButton>
+    with SingleTickerProviderStateMixin {
   late AnimationController _controller;
 
   @override
